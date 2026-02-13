@@ -29,9 +29,9 @@ A 2×2 segmentation on GMV × engagement reveals four segments:
 | Segment | Merchants | Annual GMV | Profile |
 |---------|-----------|------------|---------|
 | **ACTIVATE** | 1,452 | $108M | High GMV potential, low engagement |
-| PROTECT | 1,048 | — | High GMV, high engagement |
-| NURTURE | 1,043 | — | Low GMV, high engagement |
-| MONITOR | 1,457 | — | Low GMV, low engagement |
+| PROTECT | 1,048 | $79M | High GMV, high engagement |
+| NURTURE | 1,043 | $61M | Low GMV, high engagement |
+| MONITOR | 1,457 | $44M | Low GMV, low engagement |
 
 The ACTIVATE segment has the order volume and basket size to grow but hasn't pulled the engagement levers. 80% lack active promotions. The non-high-growth subset (970 merchants, $71.7M annual GMV) is the intervention pool.
 
