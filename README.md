@@ -2,7 +2,7 @@
 
 **Merchants who activate promotions are 2.2x more likely to become high-growth**, and 80% of the intervention pool hasn't activated one yet. This project identifies the lever, sizes the opportunity, and designs the experiment.
 
-Portfolio Project by **Ashwath Subramanyan** | Data Scientist (Analytics)
+Portfolio Project by **Ashwath Subramanyan** | Data Scientist (Analytics) - DSA-B-103-SF3
 
 ---
 
