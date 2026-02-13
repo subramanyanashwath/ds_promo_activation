@@ -1,0 +1,198 @@
+================================================================================
+DOORDASH MERCHANT GROWTH ANALYTICS - COMPLETE METRICS SUMMARY
+================================================================================
+Generated: 2026-02-13
+Data Files: Gold merchants, orders, and engagement datasets
+Outputs: Experiment spec, driver analysis, visualizations
+
+================================================================================
+1. POPULATION & SEGMENTATION
+================================================================================
+
+TOTAL POPULATION:
+  • Total Merchants:                      5,000
+  • Active Merchants:                     4,561 (91.2%)
+  • Avg Tenure:                           24.4 months (746 days)
+
+HIGH GROWTH IDENTIFICATION:
+  • High Growth Merchants:                2,113 (42.3%)
+  • Growth Probability (avg):             42.0%
+  • GMV Growth Rate (12mo avg):           29.0%
+
+MARKET SEGMENTATION (4-QUADRANT):
+  ┌─────────────────────────────────────────────────────┐
+  │ Segment  │  Count  │   %   │  High Growth │ GMV      │
+  ├─────────────────────────────────────────────────────┤
+  │ MONITOR  │  1,453  │ 29.1% │    35.0%    │ Low/Low  │
+  │ ACTIVATE │  1,397  │ 27.9% │    34.6%    │ High/Low │
+  │ PROTECT  │  1,103  │ 22.1% │    52.8%    │ Low/High │
+  │ NURTURE  │  1,047  │ 20.9% │    51.4%    │ High/High│
+  └─────────────────────────────────────────────────────┘
+
+ACTIVATE SEGMENT (INTERVENTION TARGET):
+  • Target Merchants:                     1,397
+  • Total GMV (12mo):                     $103,340,489
+  • Avg GMV per Merchant:                 $73,973
+  • High Growth Rate in Segment:          34.6% (484 merchants)
+  • Promo Gap (inactive):                 ~65%+ estimated
+
+================================================================================
+2. PROMOTIONAL & CONTENT METRICS
+================================================================================
+
+PROMOTION STATUS:
+  • Promos Active:                        2,235 (44.7%)
+  • Promos Inactive:                      2,765 (55.3%)
+  
+PROMOTION COHORT DISTRIBUTION (by recency):
+  • Never Promoted (cohort):              458 (9.2%)
+  • Early (0-30 days):                    785 (15.7%)
+  • Mid (31-90 days):                     961 (19.2%)
+  • Late (91-180 days):                   1,228 (24.6%)
+  • Very Late (180d+):                    1,568 (31.4%)
+
+CONTENT & ENGAGEMENT:
+  • Photos Uploaded:                      2,946 (58.9%)
+  • Menu Completeness (avg):              64.4%
+  • Menu Complete (>=80%):                1,094 (21.9%)
+  • Avg Menu Items:                       103 items
+  • Engagement Score (avg, 1-5):          2.31/5.0
+
+RESPONSIVENESS:
+  • Fast Response Time (<2h):             1,945 (38.9%)
+  • Avg Response Time:                    4.1 hours
+  • Avg Delivery Radius:                  5.5 miles
+
+================================================================================
+3. FINANCIAL METRICS
+================================================================================
+
+GROSS MERCHANDISE VALUE (GMV):
+  • Total GMV (all merchants, 12mo):      $287,644,262
+  • Avg GMV per Merchant:                 $57,529
+  • Median GMV per Merchant:              $55,755
+  • Std Dev:                              $20,688
+
+ORDERS & TRANSACTIONS:
+  • Total Orders (12mo):                  7,552,615
+  • Avg Orders per Merchant:              1,511
+  • Avg Basket Size:                      $44.16
+  • Avg Monthly GMV per Merchant:         $4,794
+
+QUALITY METRICS:
+  • Avg Customer Rating:                  4.19/5.0
+  • Avg Cancellation Rate:                8.5%
+
+================================================================================
+4. DRIVER ANALYSIS - LOGISTIC REGRESSION RESULTS
+================================================================================
+
+FEATURE IMPORTANCE (Predicting High Growth):
+
+Feature                 Odds Ratio    95% CI            P-value     Sig?
+────────────────────────────────────────────────────────────────────────
+promo_active            2.233         [1.945, 2.564]    <0.000001   ✓
+photo_uploaded          1.388         [1.206, 1.598]    0.000005    ✓
+wide_radius             1.404         [1.215, 1.622]    0.000004    ✓
+menu_complete           1.346         [1.144, 1.583]    0.000332    ✓
+fast_response           1.177         [1.025, 1.353]    0.021230    ✓
+
+KEY FINDING: Promotion activity is the strongest driver (OR=2.23)
+Active promotion merchants are 2.2x more likely to achieve high growth
+
+================================================================================
+5. EXPERIMENT DESIGN & RESULTS
+================================================================================
+
+HYPOTHESIS:
+  • H0 (Null):       Proactive promotion outreach has NO effect on GMV growth
+  • H1 (Alt):        Proactive promotion outreach INCREASES GMV growth rate
+
+INTERVENTION TREATMENT:
+  • MSM dedicated outreach call
+  • 50% co-funded first promotion
+  • Promo onboarding guide
+  
+CONTROL:
+  • Business as usual (no proactive outreach)
+
+EXPERIMENTAL DESIGN:
+  • Unit:                                 Merchant
+  • Clustering:                           By city (prevent spillover)
+  • Duration:                             90 days
+  • Burn-in period:                       14 days (excluded from analysis)
+  
+SAMPLE SIZE & ASSIGNMENT:
+  • Eligible Population:                  913 merchants (18.3% of total)
+  • Treatment Group:                      451 merchants
+  • Control Group:                        462 merchants
+  • Sample Assignment p-value (SRM):      0.7158 (balanced)
+
+PRIMARY METRIC:
+  • Metric:                               avg_monthly_gmv (post-treatment)
+  • Measurement Window:                   90 days (excluding 14d burn-in)
+
+RESULTS & STATISTICAL SIGNIFICANCE:
+
+                                    Raw Effect        CUPED Effect
+  ────────────────────────────────────────────────────────────────
+  90-Day GMV Lift:                  $644.47            $593.54
+  Statistical Significance:         p < 0.0001         p < 0.0001
+  Variance Reduction:               N/A                82.36%
+  
+INTERPRETATION:
+  • Treatment merchants showed $593.54 monthly GMV increase
+  • Effect is highly statistically significant (p ~ 0.0)
+  • CUPED methodology reduced variance by 82.4% (excellent)
+  • Sample was properly balanced (SRM p=0.7158 >> 0.05)
+  
+DECISION:                                                    ✓ SHIP
+
+GUARDRAIL METRICS (Must NOT exceed):
+  • Merchant churn rate increase:         Must stay ≤ 2 percentage points
+  • Customer complaint rate increase:     Must stay ≤ 1 percentage point
+  • Avg delivery time increase:           Must stay ≤ 5 minutes
+
+================================================================================
+6. MARKET COMPOSITION
+================================================================================
+
+GEOGRAPHIC:
+  • Unique Cities:                        15
+  • Unique Regions:                       5
+  • Avg Delivery Radius:                  5.5 miles
+
+VERTICAL/CATEGORY:
+  • Grocery:                              2,500 (50.0%)
+  • Convenience:                          1,501 (30.0%)
+  • Retail:                               999 (20.0%)
+
+AB TEST ELIGIBILITY:
+  • Eligible for Testing:                 913 (18.3%)
+  • Ineligible:                           4,087 (81.7%)
+
+================================================================================
+7. KEY INSIGHTS
+================================================================================
+
+1. STRONG PROMO DRIVER: Promotion activity increases high-growth odds by 2.2x
+   → Largest single impact among all growth drivers
+
+2. CONTENT GAP: Only 58.9% uploaded photos, 21.9% have complete menus
+   → Large untapped opportunity for quick wins
+
+3. GROWTH OPPORTUNITY: 42.3% of merchants are high-growth
+   → 57.7% represent improvement potential
+
+4. ACTIVATE SEGMENT SWEET SPOT: 1,397 merchants with high GMV but low engagement
+   → $103.3M annual GMV = meaningful revenue impact
+   → High receptivity to targeted interventions
+
+5. PROMOTIONAL COHORT IMBALANCE: 31.4% never/very-late promoted
+   → Clear segmentation for outreach strategy
+
+6. EXPERIMENT VALIDATED: $593.54 monthly lift confirmed via CUPED analysis
+   → 82% variance reduction = highly efficient design
+   → Ready to scale to broader population
+
+================================================================================

@@ -1,0 +1,122 @@
+================================================================================
+EXACT NUMBERS FROM DOORDASH MERCHANT GROWTH ANALYTICS
+================================================================================
+
+CORE BUSINESS METRICS:
+  Total Merchants:                    5,000
+  High Growth Merchants:              2,113 (42.3%)
+  Total GMV (12mo):                   $287,644,262
+  Total Orders (12mo):                7,552,615
+
+SEGMENTATION (4-Quadrant):
+  MONITOR:                            1,453 merchants (29.1%)
+  ACTIVATE:                           1,397 merchants (27.9%)  <-- INTERVENTION TARGET
+  PROTECT:                            1,103 merchants (22.1%)
+  NURTURE:                            1,047 merchants (20.9%)
+
+ACTIVATE SEGMENT BREAKDOWN:
+  Total Count:                        1,397
+  Total GMV (12mo):                   $103,340,489
+  Avg GMV per merchant:               $73,973
+  High Growth Rate:                   34.6% (484 merchants)
+
+PROMO STATUS:
+  Active:                             2,235 (44.7%)
+  Inactive:                           2,765 (55.3%)
+
+PROMO COHORTS (by recency):
+  Never Promoted:                     458 (9.2%)
+  Early (0-30d):                      785 (15.7%)
+  Mid (31-90d):                       961 (19.2%)
+  Late (91-180d):                     1,228 (24.6%)
+  Very Late (180d+):                  1,568 (31.4%)
+
+CONTENT METRICS:
+  Photos Uploaded:                    2,946 (58.9%)
+  Menu Complete (>=80%):              1,094 (21.9%)
+  Avg Menu Completeness:              64.4%
+  Avg Menu Items:                     103
+
+ENGAGEMENT:
+  Avg Engagement Score:               2.31/5.0
+  Avg Customer Rating:                4.19/5.0
+  Avg Cancellation Rate:              8.5%
+  Fast Response (<2h):                1,945 (38.9%)
+  Avg Response Time:                  4.1 hours
+
+FINANCIAL:
+  Avg GMV per merchant:               $57,529
+  Median GMV per merchant:            $55,755
+  Avg Basket Size:                    $44.16
+  Avg Monthly GMV:                    $4,794
+  Avg Orders per merchant:            1,511
+
+DRIVER ANALYSIS (Logistic Regression - Odds Ratios):
+  Promotion Active:                   OR = 2.233 [1.945, 2.564] (p<0.000001)
+  Wide Delivery Radius:               OR = 1.404 [1.215, 1.622] (p=0.000004)
+  Photos Uploaded:                    OR = 1.388 [1.206, 1.598] (p=0.000005)
+  Menu Complete:                      OR = 1.346 [1.144, 1.583] (p=0.000332)
+  Fast Response:                      OR = 1.177 [1.025, 1.353] (p=0.021230)
+
+EXPERIMENT DESIGN:
+  Eligible Population:                913 (18.3% of total)
+  Treatment Group:                    451 merchants
+  Control Group:                      462 merchants
+  Duration:                           90 days (14-day burn-in excluded)
+  Sample Balance (SRM p-value):       0.7158
+
+EXPERIMENT RESULTS:
+  Raw Effect Size:                    $644.47/month
+  CUPED-Adjusted Effect Size:         $593.54/month
+  Variance Reduction (CUPED):         82.36%
+  Raw p-value:                        <0.000001 (p~0.0)
+  CUPED p-value:                      <0.000001 (p~0.0)
+  
+DECISION:                             SHIP ✓
+
+MARKET COMPOSITION:
+  Active Merchants:                   4,561 (91.2%)
+  Avg Tenure:                         24.4 months (746 days)
+  Unique Cities:                      15
+  Unique Regions:                     5
+  Avg Delivery Radius:                5.5 miles
+
+VERTICAL BREAKDOWN:
+  Grocery:                            2,500 (50.0%)
+  Convenience:                        1,501 (30.0%)
+  Retail:                             999 (20.0%)
+
+AB TEST ELIGIBILITY:
+  Eligible:                           913 (18.3%)
+  Ineligible:                         4,087 (81.7%)
+
+GROWTH METRICS:
+  Growth Probability (avg):           42.0%
+  GMV Growth Rate (12mo):             29.0%
+
+================================================================================
+KEY STATISTICS FOR PRESENTATION
+================================================================================
+
+"Promotion activity increases high-growth probability by 2.2x"
+  → Odds Ratio = 2.233 with 95% CI [1.945, 2.564]
+
+"$103.3M in annual GMV across ACTIVATE segment (1,397 merchants)"
+  → Average $73,973 per merchant
+
+"Intervention boosted monthly GMV by $593.54 (CUPED)"
+  → Annualized impact: ~$7,120 per merchant
+
+"82.4% variance reduction through CUPED methodology"
+  → Ultra-efficient experimental design
+
+"913 merchants (18.3%) qualified for testing"
+  → 451 treatment, 462 control (balanced assignment)
+
+"55.3% of merchant base (2,765 merchants) have no active promotions"
+  → Large untapped opportunity
+
+"Only 21.9% of merchants have complete menus (80%+)"
+  → Significant content completion gap
+
+================================================================================

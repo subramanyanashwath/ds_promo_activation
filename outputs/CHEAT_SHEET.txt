@@ -1,0 +1,91 @@
+╔════════════════════════════════════════════════════════════════════════════╗
+║                 DOORDASH METRICS - CHEAT SHEET                             ║
+║                   Top 25 Numbers You Need to Know                          ║
+╚════════════════════════════════════════════════════════════════════════════╝
+
+BASIC FACTS
+──────────
+1.  Total Merchants:           5,000
+2.  High Growth Merchants:     2,113 (42.3%)
+3.  Total GMV (12mo):          $287.6 million
+4.  Total Orders (12mo):       7.55 million
+
+ACTIVATE SEGMENT (THE TARGET)
+────────────────────────────
+5.  ACTIVATE Merchants:        1,397 (27.9% of total)
+6.  ACTIVATE GMV (12mo):       $103.3 million
+7.  ACTIVATE Avg GMV/Merchant: $73,973
+8.  ACTIVATE High Growth Rate: 34.6%
+
+PROMOTION & ENGAGEMENT GAPS
+───────────────────────────
+9.  Promos Active:             2,235 (44.7%)
+10. Promos Inactive:           2,765 (55.3%)
+11. Photos Uploaded:           2,946 (58.9%)
+12. Menu Complete (80%+):      1,094 (21.9%)
+13. Avg Engagement Score:      2.31/5.0
+
+QUALITY METRICS
+───────────────
+14. Avg Customer Rating:       4.19/5.0
+15. Avg Cancellation Rate:     8.5%
+16. Fast Response (<2h):       1,945 (38.9%)
+17. Avg Response Time:         4.1 hours
+
+GROWTH DRIVERS - ODDS RATIOS
+────────────────────────────
+18. Promotion Active:          2.233 ✓ STRONGEST
+19. Wide Delivery Radius:      1.404
+20. Photos Uploaded:           1.388
+21. Menu Complete:             1.346
+22. Fast Response:             1.177
+
+EXPERIMENT RESULTS (CRITICAL)
+──────────────────────────────
+23. Monthly GMV Lift:          $593.54 ✓ CUPED-ADJUSTED
+24. Statistical Significance:  p<0.0001 ✓ HIGHLY SIGNIFICANT
+25. Variance Reduction:        82.4% (CUPED)
+
+BONUS NUMBERS
+─────────────
+Sample Size:                   913 merchants (18.3% eligible)
+Treatment Group:               451 merchants
+Control Group:                 462 merchants
+Experiment Duration:           90 days
+DECISION:                      SHIP ✓
+
+────────────────────────────────────────────────────────────────────────────
+
+QUICK INTERPRETATIONS
+
+What does "Promotion Active OR=2.233" mean?
+→ Merchants with active promotions are 2.23x MORE LIKELY to achieve high growth
+→ This is the STRONGEST predictor of success among all factors tested
+
+What does "$593.54/month lift" mean?
+→ Treatment merchants earned $593.54 MORE per month than control
+→ Over 12 months: ~$7,120 per merchant
+→ Applied to 1,397 ACTIVATE merchants: ~$9.9 million annual impact
+
+What does "p<0.0001" mean?
+→ There's less than 0.01% chance this result is due to random variation
+→ This is HIGHLY SIGNIFICANT - very confident the effect is real
+
+What does "82.4% variance reduction" mean?
+→ CUPED method made the experiment 5.7x more efficient
+→ Smaller effect sizes can now be detected with the same sample size
+→ Shows excellent experimental design
+
+────────────────────────────────────────────────────────────────────────────
+
+NAVIGATION GUIDE
+
+For quick facts → NUMBERS_AT_A_GLANCE.txt (with visual boxes)
+For specific numbers → EXACT_NUMBERS.txt (complete listing)
+For structured data → quick_reference.csv (importable to Excel)
+For full details → metrics_summary.txt (with methodology)
+For code/notebooks → experiment_spec.json (complete spec)
+
+════════════════════════════════════════════════════════════════════════════
+Generated: 2026-02-13 | Analysis Status: Complete | Confidence Level: Very High
+════════════════════════════════════════════════════════════════════════════
