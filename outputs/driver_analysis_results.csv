@@ -1,6 +1,0 @@
-feature,coefficient,odds_ratio,ci_lower,ci_upper,p_value,significant_at_05
-promo_active,0.7925,2.209,1.924,2.536,0.0,True
-photo_uploaded,0.4707,1.601,1.391,1.843,0.0,True
-wide_radius,0.3791,1.461,1.266,1.687,0.0,True
-menu_complete,0.1722,1.188,1.011,1.396,0.036591,True
-fast_response,0.1824,1.2,1.044,1.379,0.010245,True
