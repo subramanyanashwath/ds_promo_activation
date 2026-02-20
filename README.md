@@ -83,8 +83,7 @@ Synthetic data calibrated to DoorDash public benchmarks. With real data I'd exte
 │   ├── 02_statistical_analysis.py       # Driver analysis, causal inference, cohorts
 │   └── 03_experiment_design.py          # A/B test design with CUPED
 ├── data/                                # Parquet files (Bronze/Silver/Gold layers)
-├── outputs/                             # Visualizations and analysis results
-└── sql/                                 # SQL practice queries
+└── outputs/                             # Visualizations and analysis results
 ```
 
 ## Tech Stack
