@@ -8,7 +8,7 @@ Portfolio Project by **Ashwath Subramanyan** | Data Scientist (Analytics) - DSA-
 
 ## Why This Matters Now
 
-DoorDash new verticals (grocery, convenience, retail) grew 25% YoY in Q3 2025 vs. Instacart at 10%. But platform growth masks a merchant-level problem: most new-vertical merchants stall after onboarding. They sign up but never activate promotions, expand delivery radius, or complete their menu. The funnel stages where merchants drop off aren't obvious from top-line metrics.
+DoorDash new verticals (grocery, convenience, retail) grew 25% YoY in Q3 2025 vs. Instacart at 10%. In Q4 2025, DoorDash launched Smart Campaigns, an agentic AI product that automates merchant promotion spend and targeting to maximize ROI — confirming promotion activation as a top strategic priority.  But platform growth masks a merchant-level problem: most new-vertical merchants stall after onboarding. They sign up but never activate promotions, expand delivery radius, or complete their menu. The funnel stages where merchants drop off aren't obvious from top-line metrics.
 
 This project maps the merchant growth funnel — **Onboard → Activate Promos → Expand Radius → Upload Content → Achieve High Growth** — and pinpoints where the biggest drop-off happens.
 
@@ -45,7 +45,7 @@ The ACTIVATE segment has the order volume and basket size to grow but hasn't pul
 
 **3. A/B test before scaling.** n=83/arm, 90 days, stratified by vertical × region, CUPED-adjusted (79.7% variance reduction). Simulated result: SHIP — p<0.001, all guardrails pass, +$600/mo per merchant.
 
-**4. AI-powered growth playbooks.** RAG system (ChromaDB + DSPy) generating personalized merchant action plans. Extends MSM coverage 10x without adding heads.
+**4. AI-powered growth playbooks.** RAG system (ChromaDB + DSPy) generating personalized merchant action plans. Extends MSM coverage 10x without adding heads. (DoorDash's Q4 2025 Smart Campaigns launch takes this direction — automating promotion spend and targeting per merchant via agentic AI.)
 
 ## How I Validated It
 
@@ -93,4 +93,4 @@ Python · Databricks Medallion Architecture (Bronze/Silver/Gold) · statsmodels 
 
 ## Data Transparency
 
-All data is synthetic, calibrated to DoorDash public benchmarks. Market context from Q3 2025 earnings (DoorDash +25% YoY GOV, Instacart +10% YoY). Effect sizes use a calibrated log-odds formulation. All claims carry 95% CIs, p-values, and explicit causal vs. correlational labeling.
+All data is synthetic, calibrated to DoorDash public benchmarks. Market context from Q3–Q4 2025 earnings (DoorDash +25% YoY GOV, Instacart +10% YoY; Q4 2025 Smart Campaigns launch). Effect sizes use a calibrated log-odds formulation. All claims carry 95% CIs, p-values, and explicit causal vs. correlational labeling.
