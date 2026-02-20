@@ -1,4 +1,4 @@
-# Promotion Activation Is the #1 Growth Lever for New Vertical Merchants
+# Promotion Activation Is the #1 Growth Lever for New Vertical Merchants (Smart Campaigns Q4 2025 Earnings)
 
 **Merchants who activate promotions are 2.2x more likely to become high-growth**, and 80% of the intervention pool hasn't activated one yet. This project identifies the lever, sizes the opportunity, and designs the experiment.
 
